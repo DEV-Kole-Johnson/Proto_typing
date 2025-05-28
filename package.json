@@ -1,7 +1,7 @@
 {
   "name": "proto_typing",
   "version": "1.0.0",
-  "main": "index.js",
+  "main": "/screens/index.js",
   "scripts": {
     "start": "expo start",
     "android": "expo start --android",
