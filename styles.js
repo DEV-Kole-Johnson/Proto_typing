@@ -45,5 +45,9 @@ import { StyleSheet } from "react-native";
     fontSize: 16,
     textAlign: 'center',
   },
-
+  screen: {
+    flex: 1,
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
 });
