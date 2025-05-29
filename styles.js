@@ -51,3 +51,11 @@ import { StyleSheet } from "react-native";
     justifyContent: 'center',
   },
 });
+
+export const homes = StyleSheet.create({
+  text: {
+    textAlign: 'center',
+    fontSize: 20,
+    fontWeight: 10,
+  },
+});
