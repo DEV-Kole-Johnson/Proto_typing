@@ -3,7 +3,7 @@ import { Text, View, Pressable, ScrollView, StyleSheet } from 'react-native';
 import { StatusBar } from 'expo-status-bar';
 import { NavigationContainer } from '@react-navigation/native';
 
-import { styles } from './styles';
+import { styles } from '../styles.js';
 
 
 function Square({ value, onSquareClick }) {
@@ -88,11 +88,6 @@ export default function Game() {
         <View style={styles.gameInfo}>{moves}</View>
         <StatusBar style="auto" />
       </ScrollView>
-      <View>
-        <NavigationContainer>
-          
-        </NavigationContainer>
-      </View>
     </>
   );
 }
