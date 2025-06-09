@@ -1,8 +1,15 @@
+// Libary Imports
 import React from 'react';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+
+// Componet Imports
 import TicTacToe from './TicTacToe.js';
 import Chess from './Chess.js';
 import Sudoku from './Sudoku.js';
-import { createDrawerNavigator } from '@react-navigation/drawer';
+
+// Style Imports
+import { styles } from '../styles.js';
+
 
 const Drawer = createDrawerNavigator();
 
