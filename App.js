@@ -11,7 +11,6 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { MaterialIcons } from '@expo/vector-icons';
 
 //Style Imports
-import { styles, tabs } from './styles';
 
 const Tab = createBottomTabNavigator();
 
