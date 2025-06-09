@@ -1,17 +1,31 @@
 //Screens
 import  homeScreen  from './screens/homeScreen.js';
-import  gameStackScreen  from './screens/ticTacToeScreen.js';
 
 //Libary Imports
 import { NavigationContainer } from '@react-navigation/native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { MaterialIcons } from '@expo/vector-icons';
+import { createDrawerNavigator } from '@react-navigation/drawer';
+import TicTacToe from './components/TicTacToe.js';
+import Chess from './components/Chess.js';
+import Sudoku from './components/Sudoku.js';
 
 //Style Imports
 import { styles, tabs } from './styles';
 
 const Tab = createBottomTabNavigator();
+const Drawer = createDrawerNavigator();
+
+function MyDrawer() {
+  return (
+    <Drawer.Navigator >
+      <Drawer.Screen name="TicTacToe" component={TicTacToe} />
+      <Drawer.Screen name="Chess" component={Chess} />
+      <Drawer.Screen name="Sudoku" component={Sudoku} />
+    </Drawer.Navigator>
+  );
+}
 
 export default function App() {
   return (
@@ -42,11 +56,12 @@ export default function App() {
         />
         <Tab.Screen
           name="Game"
-          component={gameStackScreen}
+          component={MyDrawer}
           options={{
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="sports-esports" color={color} size={size} />
             ),
+            headerShown: false,
           }}
         />
         </Tab.Navigator>
