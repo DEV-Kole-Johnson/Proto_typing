@@ -1,5 +1,20 @@
 import { StyleSheet } from "react-native";
 
+export const colors = {
+  "red": '#FF0000',
+  "black": '#000000',
+  "dark_blue": '#262A62',
+  "lime_green": '#AECA51',
+  "light_blue": '#4462AD',
+  "light_grey": '#656666',
+  "dark_grey": '#383939',
+  "text_dark": '#263238',
+  "weather_text_color": 'white',
+  "header_cell_text": 'white',
+  "op_lime_green": "#b6cf62",
+};
+
+
  export const styles = StyleSheet.create({
   container: {
     flexGrow: 1,

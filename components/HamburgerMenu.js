@@ -8,7 +8,7 @@ import Chess from './Chess.js';
 import Sudoku from './Sudoku.js';
 
 // Style Imports
-import { styles, drawers } from '../styles.js';
+import * as css from "../styles.js";
 
 
 const Drawer = createDrawerNavigator();
@@ -19,11 +19,27 @@ export default function HamburgerMenu() {
             screenOptions={{
                 drawerPosition: 'right',
                 drawerLabelStyle: {
-                    color: 'black',
+                    color: 'white',
                     fontSize: 20,
                     fontFamily: 'myriad-pro ,sans-serif',
+                    textAlign: 'center',
                 },
                 drawerType: 'slide',
+                headerStyle: {
+                    backgroundColor: css.colors.lime_green,
+                },
+                headerTintColor: '#fff',
+                headerTitleStyle: {
+                    fontWeight: 'bold',
+                },
+                drawerItemStyle: {
+                    backgroundColor: css.colors.dark_blue,
+                    marginBottom: 10,
+
+                },
+                drawerStyle: {
+                    backgroundColor: css.colors.op_lime_green,
+                },
             }}
         >
         <Drawer.Screen name="TicTacToe" component={TicTacToe} />

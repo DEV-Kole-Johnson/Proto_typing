@@ -11,6 +11,7 @@ import { GestureHandlerRootView } from 'react-native-gesture-handler';
 import { MaterialIcons } from '@expo/vector-icons';
 
 //Style Imports
+import * as css from "./styles.js";
 
 const Tab = createBottomTabNavigator();
 
@@ -21,15 +22,16 @@ export default function App() {
         <Tab.Navigator
           screenOptions={{
             tabBarStyle: {
-              backgroundColor: '#121212', 
+              backgroundColor: css.colors.lime_green, 
               paddingBottom: 10,
               borderTopWidth: 0,
             },
             tabBarLabelStyle: {
               fontSize: 14,
               fontWeight: 'bold',
-              color: '#ffffff',
             },
+            tabBarActiveTintColor: css.colors.dark_blue,
+            tabBarInactiveTintColor: 'white',
           }}
         >
         <Tab.Screen
@@ -39,6 +41,15 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="home" color={color} size={size} />
             ),
+            title: 'Home Screen',
+            headerTitleAlign: 'center',
+            headerStyle: {
+              backgroundColor: css.colors.lime_green,
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
           }}
         />
         <Tab.Screen
