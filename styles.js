@@ -51,17 +51,3 @@ import { StyleSheet } from "react-native";
     fontWeight: 10,
   },
 });
-
-export const tabs = StyleSheet.create({
-  tabBarStyle: {
-    backgroundColor: '#121212',
-    paddingBottom: 10,
-    borderTopWidth: 0,
-    elevation: 5
-  },
-  tabBarLabelStyle: {
-    fontSize: 14,
-    fontWeight: 'bold',
-    color: '#ffffff',
-  },
-});
