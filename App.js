@@ -1,7 +1,6 @@
 //Screens
-import gameScreen from './screens/gameScreen'; // adjust path if needed
-import homeScreen from './screens/homeScreen';
-
+import  homeScreen  from './screens/homeScreen.js';
+import  gameStackScreen  from './screens/ticTacToeScreen.js';
 
 //Libary Imports
 import { NavigationContainer } from '@react-navigation/native';
@@ -43,7 +42,7 @@ export default function App() {
         />
         <Tab.Screen
           name="Game"
-          component={gameScreen}
+          component={gameStackScreen}
           options={{
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="sports-esports" color={color} size={size} />

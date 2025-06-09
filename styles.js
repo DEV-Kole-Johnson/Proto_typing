@@ -44,12 +44,7 @@ import { StyleSheet } from "react-native";
   moveText: {
     fontSize: 16,
     textAlign: 'center',
-  },
-  screen: {
-    flex: 1,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+  }
 });
 
 export const homes = StyleSheet.create({
@@ -72,4 +67,45 @@ export const tabs = StyleSheet.create({
     fontWeight: 'bold',
     color: '#ffffff',
   },
+});
+
+export const hamburger = StyleSheet.create({
+  hamburgerContainer: {
+    top: 40,
+    left: 20,
+    zIndex: 10,
+  },
+
+  hamburger: {
+    width: 30,
+    height: 24,
+    justifyContent: 'space-between',
+  },
+
+  hamburgerLine: {
+    height: 4,
+    backgroundColor: '#333',
+    borderRadius: 2,
+  },
+
+  menu: {
+    position: 'absolute',
+    top: 30,
+    left: 20,
+    backgroundColor: '#fff',
+    padding: 100,
+    borderRadius: 5,
+    elevation: 5, // for Android shadow
+    shadowColor: '#000', // for iOS shadow
+    shadowOffset: { width: 0, height: 2 },
+    shadowOpacity: 0.25,
+    shadowRadius: 3.84,
+  },
+
+  menuItem: {
+    padding: 10,
+    fontSize: 20,
+    color: '#000',
+  },
+
 });
