@@ -46,8 +46,16 @@ import { StyleSheet } from "react-native";
     textAlign: 'center',
   }, 
   text: {
+    fontFamily: 'myriad-pro ,sans-serif',
     textAlign: 'center',
     fontSize: 20,
     fontWeight: 10,
+  },
+});
+
+
+export const drawers = StyleSheet.create({
+  HamburgerLines: {
+    direction: 'rtl',
   },
 });
