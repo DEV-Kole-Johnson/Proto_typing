@@ -8,7 +8,7 @@ import Chess from './Chess.js';
 import Sudoku from './Sudoku.js';
 
 // Style Imports
-import * as css from "../styles.js";
+import * as sheet from "../styles.js";
 
 
 const Drawer = createDrawerNavigator();
@@ -26,19 +26,19 @@ export default function HamburgerMenu() {
                 },
                 drawerType: 'slide',
                 headerStyle: {
-                    backgroundColor: css.colors.lime_green,
+                    backgroundColor: sheet.colors.lime_green,
                 },
                 headerTintColor: '#fff',
                 headerTitleStyle: {
                     fontWeight: 'bold',
                 },
                 drawerItemStyle: {
-                    backgroundColor: css.colors.dark_blue,
+                    backgroundColor: sheet.colors.dark_blue,
                     marginBottom: 10,
 
                 },
                 drawerStyle: {
-                    backgroundColor: css.colors.op_lime_green,
+                    backgroundColor: sheet.colors.op_lime_green,
                 },
             }}
         >

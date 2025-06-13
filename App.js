@@ -1,5 +1,6 @@
 //Screens
 import  homeScreen  from './screens/homeScreen.js';
+import  invoiceScreen  from './screens/invoiceScreen.js';
 
 // Componet Imports
 import HamburgerMenu from './components/HamburgerMenu.js';
@@ -41,8 +42,6 @@ export default function App() {
             tabBarIcon: ({ color, size }) => (
               <MaterialIcons name="home" color={color} size={size} />
             ),
-            title: 'Home Screen',
-            headerTitleAlign: 'center',
             headerStyle: {
               backgroundColor: css.colors.lime_green,
             },
@@ -60,6 +59,22 @@ export default function App() {
               <MaterialIcons name="sports-esports" color={color} size={size} />
             ),
             headerShown: false,
+          }}
+        />
+        <Tab.Screen
+          name="Invoice"
+          component={invoiceScreen}
+          options={{
+            tabBarIcon: ({ color, size }) => (
+              <MaterialIcons name="bookmark" color={color} size={size} />
+            ),
+              headerStyle: {
+              backgroundColor: css.colors.lime_green,
+            },
+            headerTintColor: '#fff',
+            headerTitleStyle: {
+              fontWeight: 'bold',
+            },
           }}
         />
         </Tab.Navigator>
