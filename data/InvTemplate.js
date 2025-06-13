@@ -1,4 +1,4 @@
-const mpmInvoicetemplate = {
+export const mpmInvoicetemplate = {
     basicOP : [
         {id: 1, ccec_unit: 'UG3.2', description: '3 Ø pad mount transformer', pricing: 'N/A', year: 2025},
         {id: 2, ccec_unit: 'UG3.2', description: '3 Ø pad mount transformer removal', pricing: 'N/A', year: 2025},
